@@ -1,0 +1,17 @@
+{
+  "name": "airbnb",
+  "version": "1.0.0",
+  "description": "this is my fullstack major project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "praneeth",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3"
+  }
+}
