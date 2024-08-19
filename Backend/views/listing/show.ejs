@@ -7,6 +7,8 @@
 </head>
 <body>
     <h3> this is each details of the place</h3>
+  
+    
     <ul>
         <li> <%= list.title %></li>
         <li> <%= list.description %></li>
@@ -14,5 +16,7 @@
         <li> <%= list.location %></li>
         <li> <%= list.country %></li>
     </ul>
+    <a href="/listing/<%= list._id %>/edit"> Edit</a>
+    <a href="/listing/<%= list._id %>/delete"> Delete</a>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust</title>
+</head>
+<body>
+    <form action="/listing/<%= list._id %>?_method=PUT" method="POST">
+        <!-- Hidden input to simulate PUT method -->
+        <input type="hidden" name="_method" value="PUT">
+        
+        <input type="text" value="<%= list.title %>" name="listing[title]" required>
+        <br>
+        <input type="text" value="<%= list.description %>" name="listing[description]" required>
+        <br>
+        <input type="text" value="<%= list.image %>" name="listing[image]">
+        <br>
+        <input type="number" value="<%= list.price %>" name="listing[price]" required>
+        <br>
+        <input type="text" value="<%= list.location %>" name="listing[location]" required>
+        <br>
+        <input type="text" value="<%= list.country %>" name="listing[country]" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

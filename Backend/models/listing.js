@@ -13,12 +13,10 @@ const listingSchema = new Schema({
     image: {
         filename: {
             type: String,
-            required: true,
             default: "default_filename"
         },
         url: {
             type: String,
-            required: true,
             default: "default_url"
         }
     },
