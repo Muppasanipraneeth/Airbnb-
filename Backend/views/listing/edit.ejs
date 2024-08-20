@@ -1,28 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderlust</title>
-</head>
-<body>
+<% layout('/layout/boilerplate') -%>
+<div>
+    <h3> Edit your list</h3>
+    <div class="row">
+        <div class="col-8 offset-2">
     <form action="/listing/<%= list._id %>?_method=PUT" method="POST">
-        <!-- Hidden input to simulate PUT method -->
         <input type="hidden" name="_method" value="PUT">
-        
-        <input type="text" value="<%= list.title %>" name="listing[title]" required>
-        <br>
-        <input type="text" value="<%= list.description %>" name="listing[description]" required>
-        <br>
-        <input type="text" value="<%= list.image %>" name="listing[image]">
-        <br>
-        <input type="number" value="<%= list.price %>" name="listing[price]" required>
-        <br>
-        <input type="text" value="<%= list.location %>" name="listing[location]" required>
-        <br>
-        <input type="text" value="<%= list.country %>" name="listing[country]" required>
-        <br>
-        <button type="submit">Submit</button>
+
+        <!-- Hidden input to simulate PUT method -->
+         <div>
+            <label for="Title" class="form-lable">  Title</label>
+            <input type="text" value="<%= list.title %>" name="listing[title]" class="form-control" required>
+
+         </div>
+         <div>
+            <label for="Description" class="form-lable"> Description</label>
+<textarea type="text" value="<%= list.description %>" name="listing[description]"  class="form-control" ></textarea>
+         </div>
+         <div>
+            <label for="Image" class="form-lable"> Image</label>
+            <input type="text" value="<%= list.image %>" class="form-control name="listing[image]">
+
+         </div> <div>
+            <label for="price" class="form-lable">price</label>
+            <input type="number" value="<%= list.price %>" name="listing[price]" class="form-control "required>
+
+         </div> <div>
+            <label for=" country" class="form-lable">country</label>
+            <input type="text" value="<%= list.country %>" name="listing[country]" required>
+
+         </div> <div>
+            <label for="location" class="form-lable">location</label>
+            <input type="text" value="<%= list.location %>" name="listing[location]" required>
+
+         </div>
+      
+        <button class="btn btn-dark add-btn">Submit</button>
     </form>
-</body>
-</html>
+</div>
+</div>
+</div>

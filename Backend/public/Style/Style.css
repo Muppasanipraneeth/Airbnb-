@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    height: 100vh; /* Example height to ensure scrolling */
+    display: flex;
+flex-direction: column;
+}
+
+.container{
+    flex: 1;
+}
+
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 30px;
+}
+
+.navbar{
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    background-color: white;
+    height: 5rem;
+    align-items: center;
+    
+}
+.nav-link{
+    color: #222222 !important;
+}
+.footer-info{
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: space-between;
+}
+.info-socail{
+    margin-right: 10px;
+    padding: 2px;
+}
+.info >a{
+    text-decoration: none;
+    color: #222222;
+    margin: 2px;
+    
+}
+.info>a:hover{
+    text-decoration: underline;
+    color: rgb(50, 119, 176);
+}
+.newform{
+    margin-left: 40px;
+}
+.f-h{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+
+}
+.add-btn :hover{
+    box-shadow: 2px;
+    color: rgb(31, 183, 206);
+}
